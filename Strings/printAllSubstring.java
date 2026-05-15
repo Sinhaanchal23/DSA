@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class printAllSubstring {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the string: ");
+
+        String str = sc.next();
+
+        int n = str.length();
+
+        for(int i = 0; i < n; i++) {
+
+            for(int j = i + 1; j <= n; j++) {
+
+                System.out.println(str.substring(i, j));
+            }
+        }
+    }
+}
